@@ -7,6 +7,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import AppLoading from 'expo-app-loading';
 import Header from './src/Header/index';
 import Home from './src/Home';
+import Routes from './src/Routes';
 
 export default function App() {
   let [fontsLoades] = useFonts({
@@ -20,8 +21,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Header />
-      <Home />
+      <Routes />
       <StatusBar style="auto" />
     </View>
   );
